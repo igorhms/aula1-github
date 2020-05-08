@@ -1,10 +1,26 @@
 package application;
+import java.util.Locale;
+import java.util.Scanner;
 
 public class Programa {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		char sexo;
+		int cerveja, refri, espetinho;
+		
+		System.out.print("Sexo: ");
+		sexo = sc.next().charAt(0);
+		System.out.print("Quantidade de cervejas: ");
+		cerveja = sc.nextInt();
+		System.out.print("Quantidade de refrigerantes: ");
+		refri = sc.nextInt();
+		System.out.print("Quantidade de espetinhos: ");
+		espetinho = sc.nextInt();
+		System.out.println();
 
 	}
-
 }
